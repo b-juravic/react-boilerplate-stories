@@ -16,6 +16,12 @@ const app = express();
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
+const storiesRoutes = require('./routes/stories');
+
+// For parsing JSON
+app.use(express.json());
+
+app.use('/stories', storiesRoutes);
 
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
