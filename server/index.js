@@ -21,7 +21,7 @@ const storiesRoutes = require('./routes/stories');
 // For parsing JSON
 app.use(express.json());
 
-app.use('/stories', storiesRoutes);
+app.use('/api/stories', storiesRoutes);
 
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
