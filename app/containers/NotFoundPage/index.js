@@ -1,19 +1,15 @@
 /**
- * NotFoundPage
- *
- * This is the page we show when the user visits a url that doesn't have a route
+ * Renders a page not found message for invalid routes
  *
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-
-import messages from './messages';
+import CenteredDiv from 'components/CenteredDiv/index';
 
 export default function NotFound() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <CenteredDiv>
+      <h1>Oops! Page not found...</h1>
+    </CenteredDiv>
   );
 }

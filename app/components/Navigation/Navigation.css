@@ -1,0 +1,68 @@
+nav {
+  font-size: .8rem;
+  background: #003366;
+  border-bottom: solid gainsboro .5px;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #fafafa;
+  letter-spacing: 2px;
+}
+
+nav a:visited {
+  color: #fafafa;
+}
+
+nav ul {
+  margin-top: 0;
+  padding-top: 20px;
+  height: 100%;
+}
+
+nav li {
+  display: inline;
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: #ff5c33;
+}
+
+/* nav {
+  color: white;
+  font-size: .8rem;
+  background: #fafafa;
+  border-bottom: solid gainsboro;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #002966;
+  letter-spacing: 2px;
+}
+
+nav a:visited {
+  color: #002966;
+}
+
+nav ul {
+  margin-top: 0;
+  padding-top: 20px;
+  height: 100%;
+}
+
+nav li {
+  display: inline;
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: #002966;
+} */

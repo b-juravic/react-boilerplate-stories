@@ -1,0 +1,33 @@
+form {
+  width: 40%;
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 1.2rem;
+}
+
+form div {
+  margin-left: 2.5%;
+  width: 90%;
+}
+
+label {
+  display: block;
+  letter-spacing: 2px;
+}
+
+textarea {
+  padding: 1%;
+  margin: 1%;
+  border: solid #bfbfbf 1px;
+  text-align: left;
+}
+
+button {
+  padding: 1%;
+  background-color: #bfbfbf;
+  border: solid #bfbfbf;
+  border-radius: 4px;
+  color: #003366;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,8 +1,8 @@
 /**
  * Contains stories a user submits
- * ['story3', 'story2', 'story1']
+ * ['Story 3', 'Story 2', 'Story 1']
  */
 
-const storiesList = ['story3', 'story2', 'story1'];
+const storiesList = ['Story 3', 'Story 2', 'Story 1'];
 
 module.exports = storiesList;

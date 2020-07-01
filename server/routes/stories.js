@@ -2,8 +2,9 @@
 /* eslint-disable func-names */
 const express = require('express');
 const router = new express.Router();
-
 const storiesList = require('../storiesList');
+
+/** Route handlers for stories */
 
 /**
  * GET all stories
@@ -20,10 +21,9 @@ router.get('/', function(req, res, next) {
  */
 
 router.post('/', function(req, res, next) {
-  // validate data here WIP
   storiesList.unshift(req.body.newStory);
 
-  return res.status(200).json({ message: 'New story added' });
+  return res.status(200).json({ message: 'Your new story has been added!' });
 });
 
 module.exports = router;
