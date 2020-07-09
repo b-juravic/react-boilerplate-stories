@@ -3,6 +3,6 @@
  * ['Story 3', 'Story 2', 'Story 1']
  */
 
-const storiesList = ['Story 3', 'Story 2', 'Story 1'];
+const storiesList = [];
 
 module.exports = storiesList;

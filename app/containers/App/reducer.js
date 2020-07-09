@@ -16,7 +16,7 @@ import {
 
 // The initial state of the App
 export const initialState = {
-  loading: false,
+  loading: true,
   error: false,
   stories: false,
 };
@@ -27,8 +27,6 @@ const appReducer = (state = initialState, action) =>
     switch (action.type) {
       case LOAD_STORIES:
         draft.loading = true;
-        draft.error = false;
-        draft.stories = false;
         break;
 
       case LOAD_STORIES_SUCCESS:

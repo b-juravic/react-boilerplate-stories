@@ -12,6 +12,7 @@ const MessageContainer = styled.div`
   height: 25px;
   width: 100%;
   margin-bottom: 1%;
+  text-align: center;
 `;
 
 export default MessageContainer;

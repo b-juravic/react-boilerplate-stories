@@ -1,7 +1,7 @@
 /**
  * Gets all stories from backend API
  *
- * Renders StoriesList, loading indicator, and / or error message
+ * Renders StoriesList
  */
 
 import React, { useEffect, memo } from 'react';
@@ -12,7 +12,6 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import StoriesList from 'components/StoriesList/index';
-import UserMessage from 'components/UserMessage/index';
 import CenteredDiv from 'components/CenteredDiv/index';
 import DivStyled from 'components/DivStyled/index';
 import {
@@ -33,23 +32,13 @@ export function HomePage({ stories, loading, error, fetchData }) {
     fetchData();
   }, []);
 
-  const loadingMessage =
-    loading === true ? <UserMessage success message="Loading..." /> : null;
-
-  const errorMessage =
-    error !== false ? (
-      <UserMessage message="Something went wrong, please try again." />
-    ) : null;
-
   return (
     <div>
       <CenteredDiv>
         <h1>Welcome to Stories!</h1>
       </CenteredDiv>
       <DivStyled>
-        {loadingMessage}
-        {errorMessage}
-        <StoriesList stories={stories} />
+        <StoriesList stories={stories} loading={loading} error={error} />
       </DivStyled>
     </div>
   );
